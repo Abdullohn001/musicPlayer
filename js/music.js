@@ -11,8 +11,7 @@ const audio = document.querySelector(".audio"),
   currentTimeEl = document.querySelector(".current-time"),
   durationEl = document.querySelector(".duration"),
   title = document.querySelector(".song");
-
-// content
+const voiseWrapper = document.querySelector(".voise__wrapper");
 
 audio.volume = 0.5;
 volumeValue.textContent = 50;
@@ -114,7 +113,6 @@ const updateDuration = () => {
     currentTimeEl.textContent = formatTime(audio.currentTime);
   });
 };
-
 
 // events
 
